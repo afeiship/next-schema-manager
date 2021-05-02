@@ -1,5 +1,6 @@
 (function () {
   // https://zhuanlan.zhihu.com/p/58401380
+  // https://www.stefanjudis.com/today-i-learned/property-order-is-predictable-in-javascript-objects-since-es2015/
   var global = typeof window !== 'undefined' ? window : this || Function('return this')();
   var nx = global.nx || require('@jswork/next');
   var DICTIONARY = require('./dictionary.json');

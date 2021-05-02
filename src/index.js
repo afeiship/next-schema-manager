@@ -1,4 +1,5 @@
 (function () {
+  // https://zhuanlan.zhihu.com/p/58401380
   var global = typeof window !== 'undefined' ? window : this || Function('return this')();
   var nx = global.nx || require('@jswork/next');
   var DICTIONARY = require('./dictionary.json');

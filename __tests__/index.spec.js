@@ -2,7 +2,7 @@
   const NxSchemaManager = require('../src');
 
   describe('NxSchemaManager.methods', function () {
-    test('nx.SchemaManager', function () {
+    test('nx.SchemaManager set normal with null value', function () {
       var manager = new NxSchemaManager();
       manager.define('users', {
         fields: {
@@ -13,7 +13,12 @@
         }
       });
 
-      console.log(manager.gets());
+      expect(manager.get('users')).toEqual({
+        title: '标题',
+        description: '描述',
+        code: '取值',
+        name: '名称'
+      });
     });
   });
 })();
